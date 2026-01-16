@@ -13,6 +13,27 @@ body {
   align-items: center;
 }
 
+#bm {
+  max-width: 90%;
+  max-height: 50%;
+  background: url("loading.svg") center no-repeat;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 28%;
+  corner-shape: squircle;
+  overflow: hidden;
+}
+
+header,
+footer {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+body.show-header-footer header,
+body.show-header-footer footer {
+  opacity: 1;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -56,22 +77,11 @@ header h2 {
   font-size: 1em;
 }
 
-#bm {
-  max-width: 90%;
-  max-height: 50%;
-  background: url("loading.svg") center no-repeat;
-  border: 1px solid rgb(219, 219, 219);
-  border-radius: 28%;
-  corner-shape: squircle;
-  overflow: hidden;
-}
-
-
 footer {
   display: flex;
   justify-content: center;
   align-items: end;
-  visibility: hidden;
+  opacity: 0 !important;
 }
 
 footer a {

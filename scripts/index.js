@@ -5,3 +5,5 @@ lottie.loadAnimation({
   autoplay: true,
   path: 'data.json'
 });
+
+document.getElementsByTagName('body')[0].classList.add('show-header-footer');
