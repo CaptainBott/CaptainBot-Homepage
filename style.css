@@ -21,6 +21,8 @@ body {
   border-radius: 28%;
   corner-shape: squircle;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
 
 header,
@@ -29,8 +31,9 @@ footer {
   transition: opacity 2s ease-in-out;
 }
 
-body.show-header-footer header,
-body.show-header-footer footer {
+body.show header,
+body.show footer,
+body.show #bm {
   opacity: 1;
 }
 
