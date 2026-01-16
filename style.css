@@ -72,7 +72,7 @@ header h2 {
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 2vmax;
   background-position-x: 50%;
   animation: textAnimation 3s ease-in-out infinite;
 }
